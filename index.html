@@ -342,12 +342,12 @@
 			} else if (mode != "auto") {
 				filters.push({vendorId: modes[mode].vendorId});
 			}
-			device = await navigator.hid.requestDevice({filters: filters});
-			if (!device) {
+			var devices = await navigator.hid.requestDevice({filters: filters});
+			if (!devices) {
 				logappend('chooser dismissed without a selection');
 				return;
 			}
-
+			device = devices[0]; //fix issue : device.open() undefined
 			// Open the device.
 			await device.open();
 			if (!device.opened) {
