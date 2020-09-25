@@ -12,7 +12,7 @@ WebHID is available in Chrome 78+ behind a flag. To use WebHID, navigate to chro
 ## Usage
 
 * Plug the headset into a USB port.
-* Open the [demo page](https://rpaskowitz.github.io/telephony-webhid-demo/)
+* Open the [demo page](https://pencil240.github.io/grandstream-guv30xx-webhid-demo/)
 * Click connect
 * In the device chooser dialog, select the headset
 * Check that a "Connected to device" message is displayed.
